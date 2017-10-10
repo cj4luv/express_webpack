@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./server.js --exec babel-node localhost",
-    "build": "babel ../server -d dist --ignore ./node_modules,./scripts && mkdir -p dist/bin && mkdir -p dist/views && cp ./bin/www ./dist/bin/ && cp -r ./views dist/",
-    "serve": "PORT=3002 node dist/bin/www",
+    "build": "babel ../server -d dist --ignore ./node_modules,./scripts && mkdir -p dist/views && cp -r ./views dist/",
+    "serve": "PORT=3002 node dist/server.js",
     "clean": "rm -rf dist",
     "test": "mocha --compilers js:babel-register",
     "pm2": "pm2 start ./server.js --name 'Oday Server'"

@@ -27,6 +27,8 @@
 - middlewares: JWT 방식 미들 웨어
 - models: mySql 및 redis 엑세스하는 함수
 - modules: 자주 사용되는 함수
+- dist: babel로 서버 측 코드 ES6 -> ES5 번역 (상품화)
+- test: mocha 설정 파일
 
 ### 파일
 - .babelrc: 바벨 프리셋과 플러그인 설정.
@@ -36,6 +38,14 @@
 
 ## Start Up
 - nodemon ./server.js --exec babel-node localhost
+
+## script 명령어 설명
+- start: nodemon은 server.js 를 실행하는데 babel-node도 함께 사용하면서 서버 실행. 코드가 변경되면 서버 자동 재시작
+- build: 전체코드 ES6 -> ES5 컴파일 (제품화)
+- serve: 프로덕트 서버 테스트 port 3002
+- test : 유닛 테스트 BDD와 TDD방식 둘다 사용 할수 있음 (test/index.js 설정 파일)
+- clean: build파일 dist 폴더 삭제
+- pm2  : pm2에 서버 등록
 
 ## 사용 중인 모듈 및 미들 웨어
 - nodemon: 서버 코드가 변경 될 때 마다 서버 재시작
