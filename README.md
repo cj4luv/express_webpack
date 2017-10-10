@@ -1,5 +1,5 @@
-# Oday Market
-- 오늘의 시장 프론트 and 서버
+# express + webpack(middleware)
+- 웹팩을 미들웨어로 서버 측에서 사용하는 예제
 
 ## React install 참조
 - https://facebook.github.io/react/docs/installation.html
